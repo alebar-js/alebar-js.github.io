@@ -1,0 +1,40 @@
+.header {
+  background-color: #24292e;
+  color: white;
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.menu {
+  margin-right: 1rem;
+}
+
+.end {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
