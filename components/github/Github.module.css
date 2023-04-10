@@ -1,33 +1,46 @@
 .pageContainer {
-    background-color: #010409;
-    display: flex;
-    min-height: 100vh;
-    align-items:stretch;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  background-color: #010409;
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.repoLink {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.repoAvatar {
+  border-radius: 50%;
+  width: 15px;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .searchbar {
-    background-color: #010409;
-    border-radius: 6px;
-    border: 1px solid #30363d;
-    font-size: 14px;
-    margin-top: 5px;
-    padding: 5px 12px;
-    width: 100%;
+  background-color: #010409;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px 12px;
+  width: 100%;
 }
 
 .searchbar:focus:not(:focus-visible) {
-    border-color: #2f81f7;
-    outline: none;
-    box-shadow: inset 0 0 0 1px transparent;
+  border-color: #2f81f7;
+  outline: none;
+  box-shadow: inset 0 0 0 1px transparent;
 }
 
 .searchbar:focus-visible {
-    border-color: #2f81f7;
-    outline: none;
-    box-shadow: inset 0 0 0 1px #2f81f7;
+  border-color: #2f81f7;
+  outline: none;
+  box-shadow: inset 0 0 0 1px #2f81f7;
 }
 
 .sidebarContent {
-    margin-top: 20px
+  margin-top: 20px;
 }
