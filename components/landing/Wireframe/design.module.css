@@ -1,0 +1,23 @@
+.design {
+  float: left;
+  position: relative;
+}
+
+.mac {
+  translate: none;
+  rotate: none;
+  opacity: 1;
+  position: fixed;
+  top: -200px;
+  width: 80vw;
+}
+
+.wireframe {
+  margin-bottom: 52px;
+}
+
+.design .mac,
+.design .wireframe {
+  border-radius: 15px;
+  margin-left: -80px;
+}

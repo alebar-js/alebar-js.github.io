@@ -1,15 +1,18 @@
-import React from 'react';
-import Link from 'next/link';
-import { FaGithub } from 'react-icons/fa';
-import styles from './Header.module.css';
+import React from "react";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
+    <header
+      style={{ borderBottom: "1px solid #30363d" }}
+      className="bg-[#010409] text-white"
+    >
       <nav className={styles.navbar}>
         <div className={styles.brand}>
           <Link className={styles.item} href="/">
-              <FaGithub className={styles.logo} />
+            <FaGithub className={styles.logo} />
           </Link>
         </div>
         <div className={styles.menu}>

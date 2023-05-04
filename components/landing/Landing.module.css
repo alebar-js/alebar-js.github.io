@@ -1,0 +1,7 @@
+.moved {
+  /* Equivalent to perspective(500px) translateX(10px) */
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+  font-weight: 800;
+  font-size: xx-large;
+  color: #6d597a;
+}

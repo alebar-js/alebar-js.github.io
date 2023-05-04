@@ -1,0 +1,27 @@
+.container {
+  background: indianred;
+}
+
+.card {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  /* background: url(https://images.pexels.com/photos/1030963/pexels-photo-1030963.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500); */
+  border-radius: 5px;
+  will-change: transform;
+  cursor: grab;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffffaa;
+  touch-action: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
