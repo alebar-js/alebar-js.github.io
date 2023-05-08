@@ -21,6 +21,8 @@ export type ProjectInfo = {
   title: string;
   description: string;
   toolsUsed: Array<string>;
+  codeLink?: string;
+  liveLink?: string;
 };
 
 export const icons: { [key: string]: JSX.Element } = {
@@ -45,6 +47,7 @@ export const cards: ProjectInfo[] = [
     description:
       "Made as a series of website clones, to diversify my knowledge and learn about how other companies implement their websites.",
     toolsUsed: ["react", "next", "tailwind", "typescript"],
+    codeLink: "",
   },
   {
     title: "Slack Homepage Clone",

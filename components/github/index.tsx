@@ -26,20 +26,20 @@ const HomeContent = (props: { onTabChange: (s: string) => void }) => {
         <h2 className={classes.cardHeading}>What is this page?</h2>
         <p className="text-base text-[#7d8590]">
           This project acts as a learning tool and showcase for my web
-          development skillset. I've challenged myself to re-create websites
-          that I know and love from around the software development industry, to
-          learn about different visual components, how other companies are using
-          them, and how their developers implement them
+          development skillset. I&apos;ve challenged myself to re-create
+          websites that I know and love from around the software development
+          industry, to learn about different visual components, how other
+          companies are using them, and how their developers implement them
         </p>
         <Button onClick={() => Router.push("/")}>Discover More Sites</Button>
       </Card>
       <Card className="my-4 w-full p-8 text-base text-[#7d8590]">
         <h2 className={classes.cardHeading}>Why Github?</h2>
         <p>
-          I've used Github for years, and have always admired its UX designs, as
-          well as the website's clean look. I believe that these features have
-          played a large part in Github's ubiquitous presence within the
-          sofwtare development industry
+          I&apos;ve used Github for years, and have always admired its UX
+          designs, as well as the website&apos;s clean look. I believe that
+          these features have played a large part in Github&apos;s ubiquitous
+          presence within the sofwtare development industry
         </p>
         <p className="mt-2">
           This page is inspired by the Github Dashboard. You can click on any of
@@ -60,10 +60,10 @@ const RepositoryContent = (props: { repo: string }) => {
         <h2 className={classes.cardHeading}>What is this page?</h2>
         <p className="text-base text-[#7d8590]">
           This project acts as a learning tool and showcase for my web
-          development skillset. I've challenged myself to re-create websites
-          that I know and love from around the software development industry, to
-          learn about different visual components, how other companies are using
-          them, and how their developers implement them
+          development skillset. I&apos;ve challenged myself to re-create
+          websites that I know and love from around the software development
+          industry, to learn about different visual components, how other
+          companies are using them, and how their developers implement them
         </p>
         <Button onClick={() => Router.push("/")}>Discover More Sites</Button>
       </Card>
@@ -95,8 +95,8 @@ const Index: React.FC = () => {
           </div>
           <div className={styles.sidebarContent}>
             <div className={styles.sidebarRepoList}>
-              {repos.map((repo) => (
-                <div className={styles.repoLink}>
+              {repos.map((repo, i) => (
+                <div className={styles.repoLink} key={`repoList-${i}`}>
                   <Link href={repo.url} target="_blank">
                     <Image
                       src={repo.avatar}

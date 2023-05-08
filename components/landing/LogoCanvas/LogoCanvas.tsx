@@ -12,7 +12,7 @@ const LogoCanvas = ({ children }: LogoCanvasProps) => {
       <div className="z-0">{children}</div>
       {logos.map(({ Img, position }, i) => {
         return (
-          <Logo initialX={position.x} initialY={position.y}>
+          <Logo key={`logo-${i}`} initialX={position.x} initialY={position.y}>
             <Img />
           </Logo>
         );

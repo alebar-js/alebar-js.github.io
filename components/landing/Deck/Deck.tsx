@@ -3,6 +3,8 @@ import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { cards, icons } from "./constants";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 const to = (i: number) => ({
   x: 0,
@@ -81,16 +83,24 @@ const Deck = () => {
               >
                 <div
                   className="h-full select-none rounded-md p-2"
-                  style={{ border: "3px   solid #087EA4" }}
+                  style={{ border: "3px solid #087EA4" }}
                 >
                   <h2 className="text-lg font-bold">{card.title}</h2>
-                  <p>{card.description}</p>
-                  <h3>Tools Used:</h3>
-                  {card.toolsUsed.map((tool) => (
-                    <div title={tool} className="mr-2 inline-block h-12 w-12">
+                  <p className="my-2">{card.description}</p>
+                  <h3 className="my-2 text-lg font-semibold">Tools Used:</h3>
+                  {card.toolsUsed.map((tool, i) => (
+                    <div
+                      title={tool}
+                      key={`${tool}-icon-${i}`}
+                      className="mr-2 inline-block h-12 w-12"
+                    >
                       {icons[tool]}
                     </div>
                   ))}
+                  {card.codeLink && (
+                    <Link href={card.codeLink}>Source Code</Link>
+                  )}
+                  {card.liveLink && <Link href={card.liveLink}>Live Demo</Link>}
                 </div>
               </animated.div>
             </animated.div>

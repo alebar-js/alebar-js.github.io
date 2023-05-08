@@ -31,7 +31,7 @@ const LandingPage = () => {
           <Sidebar onScroll={(offset: number) => scrollTo(offset)} />
         </ParallaxLayer>
 
-        {/* Logo canva and greeting layer */}
+        {/* Logo canvas and greeting layer */}
         <ParallaxLayer offset={0} className="flex justify-end">
           <LogoCanvas handleClick={() => scrollTo(1)} />
         </ParallaxLayer>
@@ -52,6 +52,8 @@ const LandingPage = () => {
         <ParallaxLayer offset={1} className="flex justify-end">
           <AboutSection handleClick={() => scrollTo(2)} />
         </ParallaxLayer>
+
+        {/* Deck layer */}
         <ParallaxLayer offset={2} className="flex justify-end">
           {deckShowing && (
             <div className="relative z-10 flex h-full w-[80%] items-center justify-center">

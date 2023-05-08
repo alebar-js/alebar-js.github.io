@@ -17,3 +17,8 @@ export interface LayerProps {
   children?: React.ReactNode;
   onScroll?: (offset: number) => void;
 }
+
+export interface StyleProps {
+  style?: React.CSSProperties;
+  className?: string;
+}

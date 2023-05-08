@@ -11,8 +11,11 @@ const Timeline: React.FC<ITimelineProps> = ({ items }) => {
     <div>
       <h2 className="mb-2 text-sm font-semibold">Latest Changes</h2>
       <ul>
-        {items.map((item) => (
-          <li className='relative before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-[1px] before:bg-[#21262d] before:text-[#21262d] before:content-[""]'>
+        {items.map((item, i) => (
+          <li
+            key={`timeline-${i}`}
+            className='relative before:absolute before:bottom-0 before:left-0 before:top-0 before:block before:w-[1px] before:bg-[#21262d] before:text-[#21262d] before:content-[""]'
+          >
             <svg
               className="absolute left-[-7.5px] top-[-3px] inline overflow-visible fill-[#30363d] align-text-bottom"
               aria-hidden={true}

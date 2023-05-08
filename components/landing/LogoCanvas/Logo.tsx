@@ -10,11 +10,10 @@ interface LogoProps {
 }
 
 const Logo = ({ initialX, initialY, children }: LogoProps) => {
-  const [{ x, y, height, width, scale, opacity }, api] = useSpring(() => ({
+  const [{ x, y, scale, opacity }, api] = useSpring(() => ({
     x: 0,
     y: 0,
-    height: 75,
-    width: 75,
+
     scale: 1,
     opacity: 0.4,
   }));
@@ -39,7 +38,7 @@ const Logo = ({ initialX, initialY, children }: LogoProps) => {
 
   return (
     <animated.div
-      className={styles.card}
+      className={`${styles.logo} h-[75px] w-[75px] xl:h-[100px] xl:w-[100px]`}
       {...bind()}
       {...hover()}
       style={{
@@ -47,8 +46,6 @@ const Logo = ({ initialX, initialY, children }: LogoProps) => {
         y,
         marginLeft: initialX,
         marginTop: initialY,
-        height,
-        width,
         opacity,
         scale,
       }}

@@ -44,7 +44,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
         }
       }, 25);
     delay && textIndex == 0 ? setTimeout(timeout, delay) : timeout();
-  }, [textIndex, text.length, showTypingIndicator]);
+  }, [textIndex, text.length, showTypingIndicator, delay]);
 
   const letters = currentText.split("");
 

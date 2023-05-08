@@ -17,6 +17,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inconsolata)", ...fontFamily.sans],
       },
+      boxShadow: {
+        sidebar: "0 35px 60px -15px rgba(8, 126, 124, 0.3)",
+      },
     },
   },
   plugins: [
