@@ -13,20 +13,22 @@ const Logo = ({ initialX, initialY, children }: LogoProps) => {
   const [{ x, y, scale, opacity }, api] = useSpring(() => ({
     x: 0,
     y: 0,
-
     scale: 1,
     opacity: 0.4,
   }));
   const [hovered, setHover] = useState(false);
 
   // Set the drag hook and define component movement based on gesture data
-  const bind = useDrag(({ down, offset: [ox, oy], event }) => {
-    event.preventDefault();
-    api.set({
-      x: ox,
-      y: oy,
-    });
-  });
+  const bind = useDrag(
+    ({ down, movement: [mx, my], offset: [ox, oy], event }) => {
+      event.preventDefault();
+      console.log(down, ox, oy, mx, my);
+      api.start({
+        x: down ? mx : 0,
+        y: down ? my : 0,
+      });
+    }
+  );
 
   const hover = useHover((state) => {
     setHover(state.hovering!);

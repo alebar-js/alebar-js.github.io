@@ -3,7 +3,7 @@ import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { cards, icons } from "./constants";
-import { FaGithub } from "react-icons/fa";
+import { GoMarkGithub, GoTelescope } from "react-icons/go";
 import Link from "next/link";
 
 const to = (i: number) => ({
@@ -82,12 +82,12 @@ const Deck = () => {
                 }}
               >
                 <div
-                  className="h-full select-none rounded-md p-2"
+                  className="h-full select-none rounded-md p-2 relative"
                   style={{ border: "3px solid #087EA4" }}
                 >
                   <h2 className="text-lg font-bold">{card.title}</h2>
                   <p className="my-2">{card.description}</p>
-                  <h3 className="my-2 text-lg font-semibold">Tools Used:</h3>
+                  <h3 className="my-6 text-lg font-semibold">Tools Used:</h3>
                   {card.toolsUsed.map((tool, i) => (
                     <div
                       title={tool}
@@ -97,10 +97,20 @@ const Deck = () => {
                       {icons[tool]}
                     </div>
                   ))}
-                  {card.codeLink && (
-                    <Link href={card.codeLink}>Source Code</Link>
-                  )}
-                  {card.liveLink && <Link href={card.liveLink}>Live Demo</Link>}
+                  <div className="absolute bottom-2 w-full text-right right-4 font-semibold text-blue">
+                    {card.codeLink && (
+                      <Link href={card.codeLink} className="block my-1">
+                        View Source
+                        <GoMarkGithub className="inline-block ml-1" />
+                      </Link>
+                    )}
+                    {card.liveLink && (
+                      <Link href={card.liveLink}>
+                        Live Demo
+                        <GoTelescope className="inline-block ml-1" />
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </animated.div>
             </animated.div>

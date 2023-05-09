@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Sidebar from "./Sidebar";
 import Deck from "./Deck/Deck";
-import LogoCanvas from "./LogoCanvas/LogoCanvas2";
+import LogoCanvas from "./LogoCanvas";
 import AboutSection from "./AboutSection";
 import Button from "./Button";
 
