@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Sidebar from "./Sidebar";
-import Image from "next/image";
 import Deck from "./Deck/Deck";
 import LogoCanvas from "./LogoCanvas/LogoCanvas2";
 import AboutSection from "./AboutSection";
-import arrowDown from "../../public/circle-arrow-down-solid.svg";
 import Button from "./Button";
 
 const LandingPage = () => {
