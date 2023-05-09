@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import styles from "./Header.module.css";
+import styles from "./styles.module.css";
 
 const Header: React.FC = () => {
   return (
