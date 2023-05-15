@@ -29,6 +29,17 @@ const LandingPage = () => {
           <Sidebar onScroll={(offset: number) => scrollTo(offset)} />
         </ParallaxLayer>
 
+        <ParallaxLayer
+          sticky={{ start: 0, end: 0 }}
+          speed={2}
+          className="relative h-full w-full -z-50 mix-blend-exclusion bg-blend-exclusion"
+        >
+          <div
+            className="absolute h-full w-full bg-[#fa8072]"
+            style={{ clipPath: "polygon(0 0, 0 100%, 100% 0)" }}
+          />
+        </ParallaxLayer>
+
         {/* Logo canvas and greeting layer */}
         <ParallaxLayer offset={0} className="flex justify-end">
           <LogoCanvas handleClick={() => scrollTo(1)} />
@@ -37,7 +48,7 @@ const LandingPage = () => {
         {/* Triangle Layer */}
         <ParallaxLayer
           offset={1}
-          speed={1.2}
+          speed={0.5}
           className="relative h-full w-full"
         >
           <div

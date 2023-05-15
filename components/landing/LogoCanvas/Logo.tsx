@@ -22,10 +22,9 @@ const Logo = ({ initialX, initialY, children }: LogoProps) => {
   const bind = useDrag(
     ({ down, movement: [mx, my], offset: [ox, oy], event }) => {
       event.preventDefault();
-      console.log(down, ox, oy, mx, my);
       api.start({
-        x: down ? mx : 0,
-        y: down ? my : 0,
+        x: ox,
+        y: oy,
       });
     }
   );

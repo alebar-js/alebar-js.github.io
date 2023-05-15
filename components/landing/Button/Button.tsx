@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import arrowDown from "../../../public/circle-arrow-down-solid.svg";
 import { FaArrowCircleDown, FaCalculator } from "react-icons/fa";
 
 interface ButtonProps {
@@ -35,7 +33,10 @@ const Button = ({
         //   height={36}
         //   className="mx-2 inline-block fill-blue stroke-blue"
         // />
-        <FaArrowCircleDown className="fill-blue h-9 w-9 mx-2 inline-block " />
+        <FaArrowCircleDown
+          style={{ transform: up ? "rotate(180deg)" : "" }}
+          className="fill-blue h-9 w-9 mx-2 inline-block "
+        />
       )}
       {children}
     </button>
