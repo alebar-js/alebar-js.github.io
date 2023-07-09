@@ -3,6 +3,7 @@ import IconTailwind from "./logos/IconTailwind";
 import IconTs from "./logos/IconTs";
 import IconJs from "./logos/IconJs";
 import IconHtml from "./logos/IconHtml";
+import IconPython from "./logos/IconPython";
 import IconNext from "./logos/IconNext";
 import IconGcp from "./logos/IconGcp";
 import IconThreeJS from "./logos/IconThreeJs";

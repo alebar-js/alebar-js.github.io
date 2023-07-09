@@ -22,7 +22,7 @@ const LogoCanvas = ({ children, handleClick }: LogoCanvasProps) => {
           </Logo>
         );
       })}
-      <Button className="font-semibold text-xl" arrow onClick={handleClick}>
+      <Button className="text-xl font-semibold" arrow onClick={handleClick}>
         Learn More
       </Button>
     </div>

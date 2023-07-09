@@ -5,3 +5,4 @@ export * from "./IconReact";
 export * from "./IconTailwind";
 export * from "./IconTs";
 export * from "./IconThreeJs";
+export * from "./IconPython";
