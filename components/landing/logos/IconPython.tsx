@@ -1,0 +1,121 @@
+import React from "react";
+
+interface SvgProps {
+  hovered?: boolean;
+}
+
+const Html = ({ hovered }: SvgProps) => {
+  return (
+    <>
+      <svg
+        width="500"
+        height="500"
+        viewBox="0 0 500 500"
+        version="1.1"
+        id="svg01"
+      >
+        <g id="layer1" style={{ display: "inline" }}>
+          <path
+            d="M 250,155 H 100 c 0,0 -45,0 -45,95 0,95 45,95 45,95 h 45 v -45 c 0,-30 25,-55 55,-55 h 100 c 25,0 45,-20 45,-45 V 100 c 0,0 0,-45 -95,-45 -95,0 -95,45 -95,45 v 45 h 95 z"
+            id="path101"
+            style={{
+              fill: "#3377bb",
+              fillOpacity: 1,
+              stroke: "none",
+              strokeWidth: 0.5,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+          />
+          <path
+            d="m 250,345 h 150 c 0,0 45,0 45,-95 0,-95 -45,-95 -45,-95 h -45 v 45 c 0,30 -25,55 -55,55 H 200 c -25,0 -45,20 -45,45 v 100 c 0,0 0,45 95,45 95,0 95,-45 95,-45 v -45 h -95 z"
+            id="path102"
+            style={{
+              fill: "#ffbb33",
+              fillOpacity: 1,
+              stroke: "none",
+              strokeWidth: 0.5,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+          />
+          <circle
+            style={{
+              fill: "#ffffff",
+              fillOpacity: 1,
+              stroke: "none",
+              strokeWidth: 0.5,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+            id="path103"
+            cx="200"
+            cy="100"
+            r="15"
+          />
+          <circle
+            style={{
+              fill: "#ffffff",
+              fillOpacity: 1,
+              stroke: "none",
+              strokeWidth: 0.5,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+            id="path104"
+            cx="300"
+            cy="400"
+            r="15"
+          />
+        </g>
+        <g id="layer3" style={{ display: "inline" }}>
+          <path
+            style={{
+              fill: "none",
+              fillRule: "evenodd",
+              stroke: "#00ff00",
+              strokeWidth: 10,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+            d="m 150,150 v -50 c 0,0 0,-49.999998 100,-49.999998 C 350,50.000002 350,100 350,100 v 100 c 0,30 -25,50 -50,50 H 200 c -25,0 -50,20 -50,50 v 100 c 0,0 0,50 100,50 100,0 100,-50 100,-50 v -50"
+            id="path301"
+          />
+          <path
+            style={{
+              fill: "none",
+              fillRule: "evenodd",
+              stroke: "#00ff00",
+              strokeWidth: 10,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+            d="M 250,150 H 99.999999 c 0,0 -50,0 -50,100 0,100 50,100 50,100 H 150"
+            id="path302"
+          />
+          <path
+            style={{
+              fill: "none",
+              fillRule: "evenodd",
+              stroke: "#00ff00",
+              strokeWidth: 10,
+              strokeMiterlimit: 4,
+              strokeDasharray: "none",
+              strokeOpacity: 1,
+            }}
+            d="m 350,150 h 50 c 0,0 50,0 50,100 0,100 -50,100 -50,100 H 250"
+            id="path303"
+          />
+        </g>
+      </svg>
+    </>
+  );
+};
+
+export default Html;
