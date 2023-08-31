@@ -3,7 +3,8 @@ import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import styles from "./styles.module.css";
 import { cards, icons } from "./constants";
-import { GoMarkGithub, GoTelescope } from "react-icons/go";
+import { GoTelescope } from "react-icons/go";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 const to = (i: number) => ({
@@ -101,7 +102,7 @@ const Deck = () => {
                     {card.codeLink && (
                       <Link href={card.codeLink} className="block my-1">
                         View Source
-                        <GoMarkGithub className="inline-block ml-1" />
+                        <FaGithub className="inline-block ml-1" />
                       </Link>
                     )}
                     {card.liveLink && (
