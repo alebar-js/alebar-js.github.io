@@ -23,7 +23,11 @@ const Item = ({ children, onClick }: ItemProps) => (
   </span>
 );
 
-const Sidebar = ({ onScroll }: LayerProps) => {
+interface SidebarProps extends LayerProps {
+  toggleDarkMode?: () => void;
+}
+
+const Sidebar = ({ onScroll, toggleDarkMode }: SidebarProps) => {
   const [{ x }, api] = useSpring(() => ({ x: 0 }));
 
   const bind = useHover(({ hovering }) => {
@@ -67,6 +71,9 @@ const Sidebar = ({ onScroll }: LayerProps) => {
               </Item>
             </div>
           </div>
+          {/* <div className="absolute bottom-20">
+            <button onClick={toggleDarkMode}>dark</button>
+          </div> */}
         </div>
       </div>
     </animated.div>

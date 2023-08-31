@@ -22,7 +22,7 @@ const LandingPage = () => {
   const scrollTo = (offset: number) => parallax.current?.scrollTo(offset);
 
   return (
-    <div className="flex">
+    <div className={`flex`}>
       <Parallax pages={3} ref={parallax} className="parallax">
         {/* Sidebar sticky layer */}
         <ParallaxLayer sticky={{ start: 0, end: 3 }} className="max-w-[30%]">
@@ -30,12 +30,12 @@ const LandingPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 0, end: 0 }}
-          speed={2}
+          offset={1.001}
+          speed={0.5}
           className="relative h-full w-full -z-50 mix-blend-exclusion bg-blend-exclusion"
         >
           <div
-            className="absolute h-full w-full bg-[#fa8072]"
+            className="absolute h-full w-full bg-[#7d7aa0]"
             style={{ clipPath: "polygon(0 0, 0 100%, 100% 0)" }}
           />
         </ParallaxLayer>
@@ -48,11 +48,11 @@ const LandingPage = () => {
         {/* Triangle Layer */}
         <ParallaxLayer
           offset={1}
-          speed={0.5}
-          className="relative h-full w-full"
+          speed={3}
+          className="relative h-full w-full -z-50"
         >
           <div
-            className="absolute h-full w-full bg-[#fa8072]"
+            className="absolute h-full w-full bg-[#7d7aa0] "
             style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0)" }}
           />
         </ParallaxLayer>

@@ -19,15 +19,13 @@ const Logo = ({ initialX, initialY, children }: LogoProps) => {
   const [hovered, setHover] = useState(false);
 
   // Set the drag hook and define component movement based on gesture data
-  const bind = useDrag(
-    ({ down, movement: [mx, my], offset: [ox, oy], event }) => {
-      event.preventDefault();
-      api.start({
-        x: ox,
-        y: oy,
-      });
-    }
-  );
+  const bind = useDrag(({ offset: [ox, oy], event }) => {
+    event.preventDefault();
+    api.start({
+      x: ox,
+      y: oy,
+    });
+  });
 
   const hover = useHover((state) => {
     setHover(state.hovering!);
