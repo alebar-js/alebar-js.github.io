@@ -75,4 +75,12 @@ export const cards: ProjectInfo[] = [
     codeLink: "https://github.com/alebar-js/wrapp3d",
     liveLink: "https://wrapp3d.vercel.app",
   },
+  {
+    title: "Alebar-Snippets",
+    description:
+      "Personal tech/code blog, created using NextJS/Tailwind template",
+    toolsUsed: ["react", "next", "tailwind"],
+    codeLink: "https://github.com/alebar-js/wrapp3d",
+    liveLink: "https://wrapp3d.vercel.app",
+  },
 ];

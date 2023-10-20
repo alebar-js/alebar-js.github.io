@@ -7,8 +7,7 @@
   "files.autoSave": "onFocusChange",
   "exportall.config.relExclusion": [
     "/components/landing/Sidebar/svg/IconHouse.tsx"
-  ] // optional but recommended
-  ,
+  ], // optional but recommended
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
